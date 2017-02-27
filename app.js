@@ -53,7 +53,6 @@ var todos = [];
 
 /** Reset the list every 30 minutes **/
  setInterval(function () {
-   console.log(todos);
    todos = [];
  }, 1800000);
 
