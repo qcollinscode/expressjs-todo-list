@@ -1,0 +1,47 @@
+<!---
+    include header template
+ --->
+<% include partials/header %>
+
+<!---
+    Body
+ --->
+
+<!-- Section -->
+  <section>
+
+    <!-- List Container -->
+      <div align="center">
+
+        <!-- List Title -->
+        <h1>NodeJS and Express Todo List</h1>
+
+        <!-- List -->
+        <ul>
+
+          <!-- Render a list containing each todo looped over in the todos array  -->
+          <% todos.forEach(function (todo) { %>
+            <li><%= todo %></li>
+          <% }) %>
+        </ul>
+      </div>
+
+      <!-- Form Container -->
+      <div align="center">
+
+        <!-- Form -->
+        <form action="/addTodo" method="post">
+
+          <!-- Form List Input Text Box-->
+          <input type="text" placeholder="Todo" name="newTodo">
+
+          <!-- Form Add Button -->
+          <button>Add</button>
+        </form>
+      </div>
+  </section>
+
+<!---
+    include footer template
+ --->
+<% include partials/footer %>
