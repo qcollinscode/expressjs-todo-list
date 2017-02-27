@@ -47,6 +47,16 @@ Q:::::::QQ::::::::Q   C:::::CCCCCCCC::::C  C:::::CCCCCCCC::::CO:::::::OOO:::::::
   ************************************/
 var todos = [];
 
+/**
+ * RESET LIST
+ */
+
+/** Reset the list every 30 minutes **/
+ setInterval(function () {
+   console.log(todos);
+   todos = [];
+ }, 1800000);
+
  /************************************
   * ROUTES
   ************************************/
@@ -55,10 +65,6 @@ var todos = [];
    * GET ROUTES
    */
 
-setInterval(function () {
-  console.log(todos);
-  todos = [];
-}, 7000);
  /** Home **/
  app.get("/", function(request, response) {
    response.render("home", {todos: todos});
@@ -75,7 +81,7 @@ setInterval(function () {
 
  /** Add Todo **/
  app.post("/addTodo", function (request, response) {
-   var newTodo = request.body.newTodo;
+   var newTodo = String(request.body.newTodo);
    todos.push(newTodo);
    response.redirect("/");
  });
