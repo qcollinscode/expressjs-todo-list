@@ -55,7 +55,10 @@ var todos = [];
    * GET ROUTES
    */
 
-
+setInterval(function () {
+  console.log(todos);
+  todos = [];
+}, 7000);
  /** Home **/
  app.get("/", function(request, response) {
    response.render("home", {todos: todos});
