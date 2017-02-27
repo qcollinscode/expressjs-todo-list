@@ -1,14 +1,14 @@
 {
-  "name": "expressDefault",
+  "name": "nodejs-expressjs-todo-list",
   "version": "1.0.0",
-  "description": "express default",
+  "description": "A todo list made using nodejs and expressjs",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/webpack --config mywebpack.config.js"
+    "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Q. Collins",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.16.1",

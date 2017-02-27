@@ -6,7 +6,20 @@ const {width, height, scale} = Dimensions.get("window"),
     vmax = Math.max(vw, vh);
 
 export default StyleSheet.create({
+    "html": {
+        "height": "100%",
+        "width": "100%"
+    },
     "body": {
-        "color": "purple"
+        "color": "purple",
+        "height": "100%",
+        "width": "100%"
+    },
+    "section": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "height": "100%",
+        "width": "100%"
     }
 });
