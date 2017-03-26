@@ -1,4 +1,4 @@
-# ExpressJS Basic Todo List
+# expressjs-todo-list
 
 ### Live Demo: https://expressjs-basic-todo-list.herokuapp.com/
 
